@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 @Entity(name = "Tarefa")
 @Table(name = "tb_tarefa")
-public class TarefasModel {
+public class TarefaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,7 +51,7 @@ public class TarefasModel {
         this.concluida = concluida;
     }
 
-    public TarefasModel(Long id, String descricao, LocalDate dataVencimento, Boolean concluida) {
+    public TarefaModel(Long id, String descricao, LocalDate dataVencimento, Boolean concluida) {
         this.id = id;
         this.descricao = descricao;
         this.dataVencimento = dataVencimento;
