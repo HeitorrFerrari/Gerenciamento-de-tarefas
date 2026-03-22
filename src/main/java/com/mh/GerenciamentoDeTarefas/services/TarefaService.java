@@ -13,7 +13,7 @@ public class TarefaService {
     @Autowired
     private TarefaRepository tarefaRepository;
 
-    public List<TarefaModel> buscarTarefas(){
+    public List<TarefaModel> buscarTodasTarefas(){
         return tarefaRepository.findAll();
     }
 
